@@ -103,7 +103,7 @@ public class GuideActivity extends SimpleActivity implements OnGestureListener, 
 					return false;
 				}
 			}
-			
+
 			if(flipperGuideContainer.getDisplayedChild() + 2 >= flipperGuideContainer.getChildCount()){
 				mainHandler.postDelayed(new Runnable() {
 					@Override
