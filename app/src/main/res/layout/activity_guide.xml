@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ViewFlipper
+        android:id="@+id/flipper_function_guide_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@anim/push_left_in"
+        android:outAnimation="@anim/push_left_out"
+        android:persistentDrawingCache="animation" >
+ 
+    </ViewFlipper>
+
+	<!--android:background="@drawable/btn_app_start_guide_finish"-->
+    
+    <ImageButton 
+    		android:id="@+id/btn_function_guide_enter"    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+
+        	android:layout_centerHorizontal="true"
+        	android:layout_alignParentBottom="true"
+        	android:layout_marginBottom="56dip"
+        	android:visibility="gone"/>
+
+</RelativeLayout>

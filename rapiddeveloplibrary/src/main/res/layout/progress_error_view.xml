@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/errorStateRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/errorViewRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/errorStateImageView"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/errorStateTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="25dp"
+            android:textSize="24px"
+            android:textColor="#cccccc"
+            tools:text="@string/progressActivityErrorTitlePlaceholder" />
+
+        <TextView
+            android:id="@+id/errorStateContentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5.5dp"
+            tools:text="@string/progressActivityErrorContentPlaceholder" />
+
+        <RelativeLayout
+            android:id="@+id/rl_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/iv_refresh"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_refresh"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8a8a8a"
+                android:layout_toRightOf="@id/iv_refresh"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="刷新页面"/>
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/errorStateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30px"
+            android:visibility="gone"
+            android:textColor="@color/blue"
+            android:text="@string/progressActivityErrorButton"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

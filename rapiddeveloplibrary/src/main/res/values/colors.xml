@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_color">#EDEDED</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="blue">#256993</color>
+    <color name="gary">#cccccc</color>
+
+
+
+    <!--************************************************************
+    *       最新定义的颜色规范，说是以后都按这个标准来                     *
+    **************************************************************-->
+    <!--主色-->
+    <color name="color_theme">#dc6442</color>
+    <!--页面背景的颜色-->
+    <color name="color_page_bg">#F0F0F6</color>
+    <!--分割线-->
+    <color name="color_line">#EBEBEB</color>
+    <!--输入框文字提示颜色-->
+    <color name="color_hint">#B3B3B3</color>
+    <!--文字颜色-->
+    <color name="color_text">#666666</color>
+    <!--白色背景按下去的颜色-->
+    <color name="color_common_pressed">#20000000</color>
+
+    <!--透明色-->
+    <color name="color_transparent">#00000000</color>
+    <!--白色-->
+    <color name="color_white">#ffffff</color>
+    <!--黑色-->
+    <color name="color_black">#000000</color>
+    <!--灰色-->
+    <color name="color_grey">#5D646E</color>
+    <!--红色-->
+    <color name="color_red">#e52f17</color>
+
+    <color name="color_search_corner">#ddBBBABA</color>
+
+    <color name="color_353C46">#353C46</color>
+    <color name="color_49505A">#49505A</color>
+    <color name="color_5D646E">#5D646E</color>
+    <color name="color_717882">#717882</color>
+    <color name="color_858C96">#858C96</color>
+    <color name="color_99A0AA">#99A0AA</color>
+    <color name="color_ADB4BE">#ADB4BE</color>
+    <color name="color_C4C8D0">#C4C8D0</color>
+    <color name="color_D8DCE4">#D8DCE4</color>
+</resources>
