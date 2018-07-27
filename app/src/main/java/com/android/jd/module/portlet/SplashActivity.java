@@ -8,11 +8,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.android.jd.MainActivity;
 import com.android.jd.R;
 import com.android.jd.base.SimpleActivity;
 import com.android.jd.constants.ConstantsImageUrl;
 import com.android.jd.utils.CommonUtils;
-import com.bumptech.glide.Glide;
+import com.android.jd.utils.ImageLoadUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.Random;
@@ -55,11 +56,7 @@ public class SplashActivity extends SimpleActivity {
         int i = new Random().nextInt(ConstantsImageUrl.TRANSITION_URLS.length);
         // 先显示默认图
         ivDefultPic.setImageDrawable(CommonUtils.getDrawable(R.mipmap.bg_splash));
-        Glide.with(this)
-                .load(ConstantsImageUrl.TRANSITION_URLS[i])
-                //.placeholder(R.drawable.img_transition_default)
-                //.error(R.mipmap.bg_splash)
-                .into(ivPic);
+        ImageLoadUtils.showImage(ConstantsImageUrl.TRANSITION_URLS[i],ivPic);
 
 
 
@@ -112,7 +109,7 @@ public class SplashActivity extends SimpleActivity {
         if (isIn) {
             return;
         }
-        Intent intent = new Intent(this, GuideActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.screen_zoom_in, R.anim.screen_zoom_out);
         finish();

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <WebView
+        android:id="@+id/webview_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="3dp"
+        android:layerType="software"/>
+
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/dailog_cancel"
+        android:padding="10dp"
+        android:layout_margin="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

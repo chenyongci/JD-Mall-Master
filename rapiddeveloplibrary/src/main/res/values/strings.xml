@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">rapiddeveloplibrary</string>
     <string name="qr_details">将二维码放入框内扫描</string>
+    <string name="icon">icon</string>
 
 
     <string name="progressActivityErrorButton">重试</string>

@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">JD-Mall-Master</string>
+    <string name="app_name">京东</string>
+
+
+    <string name="home_exit">再按一次退出程序</string>
+    <string name="tab_home_name">首页</string>
+    <string name="tab_type_name">分类</string>
+    <string name="tab_shop_name">购物车</string>
+    <string name="tab_mine_name">我的</string>
 </resources>

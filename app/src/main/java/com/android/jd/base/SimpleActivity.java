@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -46,6 +48,13 @@ public abstract class SimpleActivity extends RxAppCompatActivity implements IBas
         initView(savedInstanceState);
         initListener();
         initTitle();
+    }
+
+    protected void addFragment(int containerViewId, Fragment fragment , String tag) {
+        final FragmentTransaction fragmentTransaction = this.getSupportFragmentManager().beginTransaction();
+
+        fragmentTransaction.add(containerViewId, fragment , tag);
+        fragmentTransaction.commit();
     }
 
 

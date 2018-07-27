@@ -29,10 +29,13 @@ dependencies {
     implementation files('libs/zxing.jar')
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support:support-v4:27.1.1'
+    //design
+    implementation 'com.android.support:design:27.1.1'
 
     //ui
     implementation 'com.wang.avi:library:2.1.3'
     //圆头像
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+
 
 }
